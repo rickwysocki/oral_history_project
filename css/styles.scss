@@ -14,6 +14,8 @@ $link-color-lighter: lighten($link-color,15%);
 
 body {
   font: 1.25em/1.5 $font-stack;
+  padding: 0;
+  margin: 0;
 }
 
 main {

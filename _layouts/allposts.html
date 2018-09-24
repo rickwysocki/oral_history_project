@@ -9,6 +9,7 @@
       {% include nav.html %}
 
       <header>
+        <img class="header-img" src="https://placeimg.com/1000/480/any" />
         <h1>All Interviews</h1>
       </header>
 
@@ -17,7 +18,8 @@
           <article>
             <img src="{{post.header-img}}" />
             <div class="card-text">
-              <h2>{{ post.title }}</h2>
+              <h2> {{ post.interviewee }} </h2>
+              <p>Interviewed by {{ post.interviewer }} </p>
               <p>{{ post.date | date: "%b %-d, %Y" }}</p>
               <a href="{{ post.url }}">Read More</a>
             </div>

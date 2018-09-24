@@ -1,7 +1,7 @@
 /* SCSS Variables */
 /* Type Elements */
 body {
-  font: 1em/1.5 Helvetica, sans-serif; }
+  font: 1.25em/1.5 Helvetica, sans-serif; }
 
 main {
   max-width: 1000px;
@@ -21,11 +21,24 @@ nav ul li {
   margin-right: 2em; }
 
 h1 {
-  font: 800 5em/1 Helvetica, sans-serif;
-  color: red; }
+  font: 800 3.5em/1 Helvetica, sans-serif;
+  color: firebrick; }
 
 img {
   max-width: 100%; }
+
+.nav-link {
+  background-color: firebrick;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  box-sizing: border-box; }
+
+.nav-link:hover {
+  background-color: #fff;
+  color: firebrick; }
 
 /* ID Elements */
 #interview-grid {
@@ -46,9 +59,19 @@ img {
   width: 32%;
   background-color: lightgrey; }
 
+#site-brand {
+  text-shadow: 5px 5px 5px;
+  border-bottom: 5px solid; }
+
 /* Class Elements */
 .card-text {
   display: flex;
   flex-flow: column;
   align-items: center;
   text-align: center; }
+
+.site-brand-image {
+  box-shadow: 5px 5px 5px; }
+
+.recent-post-container {
+  background-color: firebrick; }

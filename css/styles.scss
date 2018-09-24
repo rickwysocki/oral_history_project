@@ -4,13 +4,13 @@
 /* SCSS Variables */
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: red;
+$primary-color: firebrick;
 $secondary-color: lightgrey;
 
 /* Type Elements */
 
 body {
-  font: 1em/1.5 $font-stack;
+  font: 1.25em/1.5 $font-stack;
 }
 
 main {
@@ -35,12 +35,27 @@ nav ul li {
 }
 
 h1 {
-  font: 800 5em/1 $font-stack ;
+  font: 800 3.5em/1 $font-stack ;
   color: $primary-color;
 }
 
 img {
   max-width: 100%;
+}
+
+.nav-link {
+  background-color: firebrick;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  color: firebrick;
 }
 
 /* ID Elements */
@@ -67,6 +82,11 @@ img {
   background-color: $secondary-color;
 }
 
+#site-brand {
+  text-shadow: 5px 5px 5px;
+  border-bottom: 5px solid;
+}
+
 /* Class Elements */
 
 .card-text {
@@ -74,4 +94,12 @@ img {
   flex-flow: column;
   align-items: center;
   text-align: center;
+}
+
+.site-brand-image {
+  box-shadow: 5px 5px 5px;
+}
+
+.recent-post-container {
+  background-color: firebrick;
 }

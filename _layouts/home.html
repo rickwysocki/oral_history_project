@@ -9,7 +9,8 @@
       {% include nav.html %}
 
       <header>
-        <h1>Oral History Project</h1>
+        <h1 id="site-brand">Oral History Project</h1>
+        <img class="site-brand-image" src="https://placeimg.com/1000/480/any" />
       </header>
 
       <section>
@@ -17,14 +18,15 @@
       </section>
 
 
-      <section>
+      <section class="recent-post-container">
         <h2>Recent Interviews</h2>
         <div id="recent-posts">
           {% for post in site.posts limit:3 %}
           <article>
             <img class="header-img" src="{{post.header-img}}" />
               <div class="card-text">
-                <h2>{{ post.title }}</h2>
+                <h2> {{ post.interviewee }} </h2>
+                <p>Interviewed by {{ post.interviewer }} </p>
                 <p>{{ post.date | date: "%b %-d, %Y" }}</p>
                 <a href="{{ post.url }}">Read More</a>
               </div>

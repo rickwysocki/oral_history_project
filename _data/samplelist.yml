@@ -1,0 +1,8 @@
+docs_list_title: Navigation
+docs:
+
+- title: Home
+  url: /index.html
+
+- title: Interviews
+  url: /interviews.html

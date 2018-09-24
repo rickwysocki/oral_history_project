@@ -1,0 +1,46 @@
+/* SCSS Variables */
+/* Type Elements */
+body {
+  font: 1em/1.5 Helvetica, sans-serif; }
+
+main {
+  max-width: 1000px;
+  margin: auto; }
+
+header {
+  max-width: 100%; }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start; }
+
+nav ul li {
+  margin-right: 2em; }
+
+h1 {
+  font: 5em/1 Helvetica, sans-serif; }
+
+img {
+  max-width: 100%; }
+
+/* ID Elements */
+#interview-grid {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+
+#interview-grid article {
+  background-color: lightgrey;
+  width: 32%; }
+
+#recent-posts {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+
+#recent-posts article {
+  width: 32%;
+  background-color: lightgrey; }

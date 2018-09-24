@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  {% include head.html %}
+
+  <body>
+    <main>
+
+      {% include nav.html %}
+
+      <header>
+        <h1>All Interviews</h1>
+      </header>
+
+        <section id="interview-grid">
+          {% for post in site.posts %}
+          <article>
+             <img src="{{post.header-img}}" />
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+            <a href="{{ post.url }}">Read More</a>
+          </article>
+          {% endfor %}
+        </section>
+
+      {% include footer.html %}
+
+    </main>
+
+  </body>
+</html>

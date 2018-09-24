@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  {% include head.html %}
+
+  <body>
+
+    <main>
+
+      {% include nav.html %}
+
+      <header>
+        <img class="header-img" src="{{ page.header-img }}" />
+        <h1>{{ page.title }}</h1>
+        <p> {{ page.blurb }}</p>
+      </header>
+
+      <aside>
+        <img src="{{ page.interviewee-photo }}" />
+        <h2>{{ page.interviewee }}</h2>
+        <p>Interviewed by {{ page.interviewer }}</p>
+      </aside>
+
+      <section>
+        <h2>Tags</h2>
+          <ul>
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
+        <a href="#">All Tags</a>
+
+      </section>
+
+      <section>
+        <h2>Transcript</h2>
+
+        {{ content }}
+
+      </section>
+
+
+
+      {% include footer.html %}
+
+    </main>
+
+  </body>
+</html>

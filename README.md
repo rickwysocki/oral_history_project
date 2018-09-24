@@ -9,6 +9,6 @@ A Jekyll-based framework for presenting oral history content. In development.
 -------------------------
 Rick Wysocki
 
-[rickwysocki.com](website)
+[website](rickwysocki.com)
 
-[twitter.com/rickwysocki](twitter)
+[twitter](twitter.com/rickwysocki)

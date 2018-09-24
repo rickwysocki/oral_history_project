@@ -21,7 +21,8 @@ nav ul li {
   margin-right: 2em; }
 
 h1 {
-  font: 5em/1 Helvetica, sans-serif; }
+  font: 800 5em/1 Helvetica, sans-serif;
+  color: red; }
 
 img {
   max-width: 100%; }
@@ -44,3 +45,10 @@ img {
 #recent-posts article {
   width: 32%;
   background-color: lightgrey; }
+
+/* Class Elements */
+.card-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center; }

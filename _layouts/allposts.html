@@ -15,10 +15,12 @@
         <section id="interview-grid">
           {% for post in site.posts %}
           <article>
-             <img src="{{post.header-img}}" />
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-            <a href="{{ post.url }}">Read More</a>
+            <img src="{{post.header-img}}" />
+            <div class="card-text">
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+              <a href="{{ post.url }}">Read More</a>
+            </div>
           </article>
           {% endfor %}
         </section>

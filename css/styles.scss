@@ -4,7 +4,7 @@
 /* SCSS Variables */
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: red;
 $secondary-color: lightgrey;
 
 /* Type Elements */
@@ -35,7 +35,8 @@ nav ul li {
 }
 
 h1 {
-  font: 5em/1 $font-stack;
+  font: 800 5em/1 $font-stack ;
+  color: $primary-color;
 }
 
 img {
@@ -59,10 +60,18 @@ img {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-
 }
 
 #recent-posts article {
   width: 32%;
   background-color: $secondary-color;
+}
+
+/* Class Elements */
+
+.card-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
 }

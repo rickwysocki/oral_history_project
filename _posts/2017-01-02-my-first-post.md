@@ -1,5 +1,5 @@
 ---
-title: Making the World through Silence
+title: Making the World Through Silence
 header-img: https://placeimg.com/1000/480/any
 interviewee: David Williams
 interviewee-photo: https://placeimg.com/100/100/any

@@ -11,7 +11,7 @@ main {
 
 header {
   max-width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 3em; }
 
 nav ul {
   list-style-type: none;
@@ -22,6 +22,25 @@ nav ul {
 
 nav ul li {
   margin-right: 2em; }
+
+aside {
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  max-width: 18%;
+  flex-flow: column; }
+
+aside h2,
+aside a,
+aside ul,
+aside p {
+  font-size: 1em; }
+
+aside h2,
+aside p,
+aside li {
+  margin: 1%; }
 
 h1 {
   font: 800 3.5em/1 Helvetica, sans-serif;
@@ -41,6 +60,10 @@ a:hover {
 a:visited {
   color: #00cdcd; }
 
+footer {
+  margin-top: 3em;
+  border-top: 5px solid; }
+
 /* ID Elements */
 #interview-grid {
   display: flex;
@@ -49,7 +72,7 @@ a:visited {
 
 #interview-grid article {
   background-color: lightgrey;
-  border-radius: 20px;
+  border-radius: 5px;
   width: 32%; }
 
 #recent-posts {
@@ -60,7 +83,7 @@ a:visited {
 #recent-posts article {
   width: 32%;
   background-color: lightgrey;
-  border-radius: 20px; }
+  border-radius: 5px; }
 
 #site-brand {
   /* text-shadow: 1px 1px 1px; */
@@ -82,7 +105,7 @@ a:visited {
 
 .masthead {
   height: 480px;
-  background: linear-gradient(rgba(0, 128, 128, 0.7), #fff), url(https://placeimg.com/1000/480/any);
+  background: linear-gradient(rgba(0, 128, 128, 0.5), #fff), url(https://placeimg.com/1000/480/any);
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -101,6 +124,38 @@ a:visited {
   margin: 0;
   padding: 0; }
 
+.interview-page-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+
 .site-brand-image {
   border-top: 20px solid teal;
   margin-bottom: 0; }
+
+.interview-content {
+  max-width: 70%; }
+
+.interview-content h2 {
+  margin-top: 0; }
+
+.interview-card-img {
+  width: 70%;
+  border-radius: 50%;
+  margin: auto; }
+
+.tag-grid {
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap; }
+
+.tag-grid li {
+  list-style-type: none;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+.icon {
+  width: 20px; }

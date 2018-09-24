@@ -5,10 +5,15 @@
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: rgb(0,128,128);
-$primary-color-transparent: rgba(0,128,128, 0.7);
+$primary-color-transparent: rgba(0,128,128, 0.5);
 $secondary-color: lightgrey;
 $link-color: $primary-color;
 $link-color-lighter: lighten($link-color,15%);
+$font-size-aside: 1em;
+$border-radius: 5px;
+$card-padding: 20px;
+$line-border: 5px solid;
+$section-margin: 3em;
 
 /* Type Elements */
 
@@ -25,7 +30,7 @@ main {
 
 header {
   max-width: 100%;
-  margin-bottom: 0;
+  margin-bottom: $section-margin;
 }
 
 nav ul {
@@ -38,6 +43,28 @@ nav ul {
 
 nav ul li {
   margin-right: 2em;
+}
+
+aside {
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  padding: $card-padding;
+  display: flex;
+  max-width: 18%;
+  flex-flow: column;
+}
+
+aside h2,
+aside a,
+aside ul,
+aside p {
+  font-size: $font-size-aside;
+}
+
+aside h2,
+aside p,
+aside li, {
+  margin: 1%;
 }
 
 h1 {
@@ -63,6 +90,10 @@ a:visited {
   color: $link-color-lighter;
 }
 
+footer {
+  margin-top: $section-margin;
+  border-top: $line-border;
+}
 
 
 /* ID Elements */
@@ -75,7 +106,7 @@ a:visited {
 
 #interview-grid article {
   background-color: $secondary-color;
-  border-radius: 20px;
+  border-radius: $border-radius;
   width: 32%;
 }
 
@@ -88,12 +119,12 @@ a:visited {
 #recent-posts article {
   width: 32%;
   background-color: $secondary-color;
-  border-radius: 20px;
+  border-radius: $border-radius;
 }
 
 #site-brand {
   /* text-shadow: 1px 1px 1px; */
-  border-bottom: 5px solid;
+  border-bottom: $line-border;
   color: black;
 }
 
@@ -130,7 +161,7 @@ a:visited {
   flex-flow: column;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: $card-padding;
 }
 
 .card-text h2,
@@ -139,7 +170,46 @@ a:visited {
   padding: 0;
 }
 
+.interview-page-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .site-brand-image {
   border-top: 20px solid $primary-color;
   margin-bottom: 0;
+}
+
+.interview-content {
+  max-width: 70%;
+}
+
+.interview-content h2 {
+  margin-top: 0;
+}
+
+.interview-card-img {
+  width: 70%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.tag-grid {
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag-grid li {
+  list-style-type: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.icon {
+  width: 20px;
 }

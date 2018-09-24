@@ -4,43 +4,35 @@
   {% include head.html %}
 
   <body>
-
     <main>
 
       {% include nav.html %}
 
-      <header>
-        <img class="header-img" src="{{ page.header-img }}" />
-        <h1>{{ page.title }}</h1>
-        <p> {{ page.blurb }}</p>
+      <header class="masthead">
+        <h1 id="site-brand">Oral History Project</h1>
       </header>
 
-      <aside>
-        <img src="{{ page.interviewee-photo }}" />
-        <h2>{{ page.interviewee }}</h2>
-        <p>Interviewed by {{ page.interviewer }}</p>
-      </aside>
-
       <section>
-        <h2>Tags</h2>
-          <ul>
-            <li>Tag 1</li>
-            <li>Tag 2</li>
-            <li>Tag 3</li>
-            <li>Tag 4</li>
-          </ul>
-        <a href="#">All Tags</a>
-
-      </section>
-
-      <section>
-        <h2>Transcript</h2>
-
         {{ content }}
-
       </section>
 
 
+      <section class="recent-post-container">
+        <h2>Recent Interviews</h2>
+        <div id="recent-posts">
+          {% for post in site.posts limit:3 %}
+          <article>
+            <img class="header-img" src="{{post.header-img}}" />
+              <div class="card-text">
+                <h2> {{ post.interviewee }} </h2>
+                <p>Interviewed by {{ post.interviewer }} </p>
+                <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+                <a href="{{ post.url }}">Read More</a>
+              </div>
+          </article>
+          {% endfor %}
+        </div>
+    </section>
 
       {% include footer.html %}
 

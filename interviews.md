@@ -1,4 +1,4 @@
 ---
 title: Interviews
-layout: allposts
+layout: interviews
 ---

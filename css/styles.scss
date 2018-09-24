@@ -4,8 +4,11 @@
 /* SCSS Variables */
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: firebrick;
+$primary-color: rgb(0,128,128);
+$primary-color-transparent: rgba(0,128,128, 0.7);
 $secondary-color: lightgrey;
+$link-color: $primary-color;
+$link-color-lighter: lighten($link-color,15%);
 
 /* Type Elements */
 
@@ -20,6 +23,7 @@ main {
 
 header {
   max-width: 100%;
+  margin-bottom: 0;
 }
 
 nav ul {
@@ -35,28 +39,29 @@ nav ul li {
 }
 
 h1 {
-  font: 800 3.5em/1 $font-stack ;
+  font: 800 3.5em/1 $font-stack;
   color: $primary-color;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 img {
   max-width: 100%;
 }
 
-.nav-link {
-  background-color: firebrick;
-  color: #fff;
-  padding: 15px;
-  text-decoration: none;
-  border: 2px solid firebrick;
-  border-radius: 10px;
-  box-sizing: border-box;
+a {
+  color: $link-color;
 }
 
-.nav-link:hover {
-  background-color: #fff;
-  color: firebrick;
+a:hover {
+  color: $link-color-lighter;
 }
+
+a:visited {
+  color: $link-color-lighter;
+}
+
+
 
 /* ID Elements */
 
@@ -68,6 +73,7 @@ img {
 
 #interview-grid article {
   background-color: $secondary-color;
+  border-radius: 20px;
   width: 32%;
 }
 
@@ -80,26 +86,58 @@ img {
 #recent-posts article {
   width: 32%;
   background-color: $secondary-color;
+  border-radius: 20px;
 }
 
 #site-brand {
-  text-shadow: 5px 5px 5px;
+  /* text-shadow: 1px 1px 1px; */
   border-bottom: 5px solid;
+  color: black;
 }
 
 /* Class Elements */
+
+.nav-link,
+.nav-link:visited {
+  color: $primary-color;
+  padding: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.masthead {
+  height: 480px;
+  background:
+    linear-gradient($primary-color-transparent, #fff),
+    url(https://placeimg.com/1000/480/any);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .card-text {
   display: flex;
   flex-flow: column;
   align-items: center;
   text-align: center;
+  padding: 20px;
+}
+
+.card-text h2,
+.card-text p {
+  margin: 0;
+  padding: 0;
 }
 
 .site-brand-image {
-  box-shadow: 5px 5px 5px;
-}
-
-.recent-post-container {
-  background-color: firebrick;
+  border-top: 20px solid $primary-color;
+  margin-bottom: 0;
 }

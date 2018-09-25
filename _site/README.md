@@ -7,6 +7,7 @@ A Jekyll-based framework for presenting oral history content. In development.
 - ~~Change allposts.html -> interviews.html~~
 - ~~Add tag functionality~~
 - Create all tags page
+- Change samplelist.yml to nav.yml (duh)
 - Add category functionality
 - Create all categories Page
 - Create all interviewees Page

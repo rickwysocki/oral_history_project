@@ -28,7 +28,7 @@ aside {
   border-radius: 5px;
   padding: 20px;
   display: flex;
-  max-width: 18%;
+  max-width: 15%;
   flex-flow: column; }
 
 aside h2,
@@ -67,13 +67,14 @@ footer {
 /* ID Elements */
 #interview-grid {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-between; }
 
 #interview-grid article {
   background-color: lightgrey;
   border-radius: 5px;
-  width: 32%; }
+  width: 32%;
+  margin-bottom: 20px; }
 
 #recent-posts {
   display: flex;
@@ -88,7 +89,7 @@ footer {
 #site-brand {
   /* text-shadow: 1px 1px 1px; */
   border-bottom: 5px solid;
-  color: black; }
+  color: #fff; }
 
 /* Class Elements */
 .nav-link,
@@ -105,7 +106,7 @@ footer {
 
 .masthead {
   height: 480px;
-  background: linear-gradient(rgba(0, 128, 128, 0.5), #fff), url(https://placeimg.com/1000/480/any);
+  background: url(https://placeimg.com/1000/480/any);
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -135,7 +136,7 @@ footer {
   margin-bottom: 0; }
 
 .interview-content {
-  max-width: 70%; }
+  max-width: 74%; }
 
 .interview-content h2 {
   margin-top: 0; }
@@ -143,7 +144,9 @@ footer {
 .interview-card-img {
   width: 70%;
   border-radius: 50%;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 20px;
+  border: solid 5px teal; }
 
 .tag-grid {
   padding: 0;

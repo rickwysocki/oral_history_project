@@ -14,9 +14,9 @@
 
       <ul>
 
-        { % for interviewee in site.interviewees %}
-          <li>{{ site.interviewee }}
-
+        { % for interviewee in site.data.interviewees % }
+          <li>{{ interviewee.name }}</li>
+        { % endfor % }
       </ul>
 
       <section>

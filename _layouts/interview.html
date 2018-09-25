@@ -4,35 +4,46 @@
   {% include head.html %}
 
   <body>
+
     <main>
 
       {% include nav.html %}
 
-      <header class="masthead">
-        <h1 id="site-brand">Oral History Project</h1>
+      <header>
+        <img class="header-img" src="{{ page.header-img }}" />
+        <h1>{{ page.title }}</h1>
+        <p> {{ page.blurb }}</p>
       </header>
 
-      <section>
-        {{ content }}
-      </section>
+      <div class="interview-page-row">
+
+        <aside>
+          <img class="interview-card-img" src="{{ page.interviewee-photo }}" />
+          <h2>{{ page.interviewee }}</h2>
+          <p>Interviewed by {{ page.interviewer }}</p>
+          <img class="icon" src="/assets/open-iconic-master/svg/headphones.svg">
+          <a href="#">Audio</a>
+          <h2>Tags</h2>
+            <ul class="tag-grid">
+              {% for tag in page.tags %}
+              <li><a href="#"> {{ tag }} </a></li>
+              {% endfor %}
+            </ul>
+          <a href="#">All Tags</a>
+        </aside>
 
 
-      <section class="recent-post-container">
-        <h2>Recent Interviews</h2>
-        <div id="recent-posts">
-          {% for post in site.posts limit:3 %}
-          <article>
-            <img class="header-img" src="{{post.header-img}}" />
-              <div class="card-text">
-                <h2> {{ post.interviewee }} </h2>
-                <p>Interviewed by {{ post.interviewer }} </p>
-                <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-                <a href="{{ post.url }}">Read More</a>
-              </div>
-          </article>
-          {% endfor %}
-        </div>
-    </section>
+
+        <section class="interview-content">
+          <h2>Transcript</h2>
+
+          {{ content }}
+
+        </section>
+
+      </div>
+
+
 
       {% include footer.html %}
 

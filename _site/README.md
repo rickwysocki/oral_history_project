@@ -15,6 +15,9 @@ A Jekyll-based framework for presenting oral history content. In development.
 - Icons
 - Typography
 - Add 404 page
+- sitemap generator
+- add config material
+- Interviewees page
 
 -------------------------
 Rick Wysocki

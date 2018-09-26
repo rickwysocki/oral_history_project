@@ -12,6 +12,20 @@
         <h1 id="site-brand">Oral History Project</h1>
       </header>
 
+
+<!-- Saved to show syntax for collections
+      <ul>
+      {% for interview_page in site.interview_pages %}
+        <li>
+          <a href="{{ interview_page.url }}">
+            {{ interview_page.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  -->
+
       <section>
         {{ content }}
       </section>
@@ -20,14 +34,14 @@
       <section class="recent-post-container">
         <h2>Recent Interviews</h2>
         <div id="recent-posts">
-          {% for post in site.posts limit:3 %}
+          {% for interview_page in site.interview_pages limit:3 %}
           <article>
             <img class="header-img" src="{{post.header-img}}" />
               <div class="card-text">
-                <h2> {{ post.interviewee }} </h2>
-                <p>Interviewed by {{ post.interviewer }} </p>
-                <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-                <a href="{{ post.url }}">Read More</a>
+                <h2> {{ interview_page.interviewee }} </h2>
+                <p>Interviewed by {{ interview_page.interviewer }} </p>
+                <p>{{ inteview_page.date | date: "%b %-d, %Y" }}</p>
+                <a href="{{ interview_page.url }}">Read More</a>
               </div>
           </article>
           {% endfor %}

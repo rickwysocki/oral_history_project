@@ -1,3 +1,8 @@
 # Project Information ---------------------------------
 project-name: Oral History Project
 description: A project developed by Rick Wysocki
+
+# Sitemap
+url: 'http://rickwysocki.com'
+plugins:
+  - jekyll-sitemap

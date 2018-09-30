@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  {% include head.html %}
+
+  <body>
+    <main>
+
+      {% include nav.html %}
+
+      <header>
+        <img class="header-img" src="https://placeimg.com/1000/480/any" />
+        <h1 id="site-brand">{{ page.title }}</h1>
+      </header>
+
+      <section>
+
+
+
+  {{ content }}
+
+    </section>
+      {% include footer.html %}
+
+    </main>
+
+  </body>
+</html>

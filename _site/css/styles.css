@@ -1,189 +1,77 @@
 /* SCSS Variables */
 /* Type Elements */
-body {
-  font: 1.25em/1.5 Helvetica, sans-serif;
-  padding: 0;
-  margin: 0; }
+body { font: 1.25em/1.5 "Oswald", sans-serif; padding: 0; margin: 0; }
 
-main {
-  max-width: 1000px;
-  margin: auto; }
+main { max-width: 1000px; margin: auto; }
 
-header {
-  max-width: 100%;
-  margin-bottom: 3em; }
+header { max-width: 100%; margin-bottom: 3em; }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-start; }
+nav ul { list-style-type: none; padding: 0; display: flex; flex-flow: row; justify-content: flex-start; }
 
-nav ul li {
-  margin-right: 2em; }
+nav ul li { margin-right: 2em; }
 
-aside {
-  background-color: lightgrey;
-  border-radius: 5px;
-  padding: 20px;
-  display: flex;
-  max-width: 15%;
-  flex-flow: column; }
+aside { background-color: lightgrey; border-radius: 5px; padding: 20px; display: flex; max-width: 15%; flex-flow: column; }
 
-aside h2,
-aside a,
-aside ul,
-aside p {
-  font-size: 1em; }
+aside h2, aside a, aside ul, aside p { font-size: 1em; }
 
-aside h2,
-aside p,
-aside li {
-  margin: 1%; }
+aside h2, aside p, aside li { margin: 1%; }
 
-h1 {
-  font: 800 3.5em/1 Helvetica, sans-serif;
-  color: teal;
-  margin-left: 5px;
-  margin-right: 5px; }
+h1 { font: 800 3.5em/1 "Oswald", sans-serif; font-family: 'Abril Fatface', cursive; color: teal; margin-left: 5px; margin-right: 5px; }
 
-img {
-  max-width: 100%; }
+img { max-width: 100%; }
 
-p {
-  padding: 0; }
+p { padding: 0; }
 
-a {
-  color: teal; }
+a { color: teal; }
 
-a:hover {
-  color: #00cdcd; }
+a:hover { color: #00cdcd; }
 
-a:visited {
-  color: #00cdcd; }
+a:visited { color: #00cdcd; }
 
-footer {
-  margin-top: 3em;
-  border-top: 5px solid; }
+footer { margin-top: 3em; border-top: 5px solid; }
 
 /* ID Elements */
-#interview-grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
+#interview-grid { display: flex; flex-flow: row wrap; justify-content: space-between; }
 
-#interview-grid article {
-  background-color: lightgrey;
-  border-radius: 5px;
-  width: 32%;
-  margin-bottom: 20px; }
+#interview-grid article { background-color: lightgrey; border-radius: 5px; width: 32%; margin-bottom: 20px; }
 
-#recent-posts {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between; }
+#recent-posts { display: flex; flex-flow: row; justify-content: space-between; }
 
-#recent-posts article {
-  width: 32%;
-  background-color: lightgrey;
-  border-radius: 5px; }
+#recent-posts article { width: 32%; background-color: lightgrey; border-radius: 5px; }
 
-#site-brand {
-  color: teal; }
+#site-brand { color: teal; }
 
 /* Class Elements */
-.nav-link,
-.nav-link:visited {
-  color: teal;
-  padding: 10px;
-  text-decoration: none;
-  box-sizing: border-box; }
+.nav-link, .nav-link:visited { color: teal; padding: 10px; text-decoration: none; box-sizing: border-box; }
 
-.nav-link:hover {
-  background-color: #fff;
-  color: teal;
-  text-decoration: underline; }
+.nav-link:hover { background-color: #fff; color: teal; text-decoration: underline; }
 
-.masthead {
-  height: 480px;
-  background: url(https://placeimg.com/1000/480/any);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+.masthead { height: 480px; background: url(https://placeimg.com/1000/480/any); background-repeat: no-repeat; background-size: 100%; display: flex; align-items: center; justify-content: space-around; }
 
-.card-text {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px; }
+.card-text { display: flex; flex-flow: column; align-items: center; text-align: center; padding: 20px; }
 
-.card-text h2,
-.card-text p {
-  margin: 0;
-  padding: 0; }
+.card-text h2, .card-text p { margin: 0; padding: 0; }
 
-.interview-page-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start; }
+.interview-page-row { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start; }
 
-.site-brand-image {
-  border-top: 20px solid teal;
-  margin-bottom: 0; }
+.site-brand-image { border-top: 20px solid teal; margin-bottom: 0; }
 
-.interview-content {
-  max-width: 74%; }
+.interview-content { max-width: 74%; }
 
-.interview-content h2 {
-  margin-top: 0; }
+.interview-content h2 { margin-top: 0; }
 
-.tag-grid {
-  padding: 0;
-  margin: 0;
-  justify-content: flex-start;
-  display: flex;
-  flex-flow: row wrap; }
+.tag-grid { padding: 0; margin: 0; justify-content: flex-start; display: flex; flex-flow: row wrap; }
 
-.tag-grid li {
-  list-style-type: none;
-  margin-left: 2%;
-  margin-right: 2%; }
+.tag-grid li { list-style-type: none; margin-left: 2%; margin-right: 2%; }
 
-.icon {
-  width: 20px; }
+.icon { width: 20px; }
 
 /* Media Queries */
-@media (max-width: 1000px) {
-  body {
-    padding: 0em 5em; }
-
-  aside {
-    max-width: 100%;
-    width: 100%; }
-
-  .interview-page-row {
-    flex-flow: column;
-    max-width: 100%;
-    justify-content: space-around; }
-
-  .interview-content {
-    max-width: 100%; }
-
-  #interview-grid {
-    flex-flow: column;
-    justify-content: space-around; }
-
-  #interview-grid article {
-    max-width: 100%;
-    width: 100%; }
-
-  #recent-posts {
-    flex-flow: column; } }
-@media (max-width: 600px) {
-  body {
-    padding: 1em; } }
+@media (max-width: 1000px) { body { padding: 0em 5em; }
+  aside { max-width: 100%; width: 100%; }
+  .interview-page-row { flex-flow: column; max-width: 100%; justify-content: space-around; }
+  .interview-content { max-width: 100%; }
+  #interview-grid { flex-flow: column; justify-content: space-around; }
+  #interview-grid article { max-width: 100%; width: 100%; }
+  #recent-posts { flex-flow: column; } }
+@media (max-width: 600px) { body { padding: 1em; } }

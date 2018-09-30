@@ -6,18 +6,17 @@ A Jekyll-based framework for presenting oral history content. In development.
 - Style interview page
 - ~~Change allposts.html -> interviews.html~~
 - ~~Add tag functionality~~
-- Create all tags page
+- ~~Create all tags page~~
 - Change samplelist.yml to nav.yml (duh)
-- Add category functionality
-- Create all categories Page
-- Create all interviewees Page
+- ~~Add category functionality~~
+- ~~Create all categories Page~~
+- ~~Create all interviewees Page~~
 - add search functionality
 - Icons
 - Typography
 - Add 404 page
 - sitemap generator
 - add config material
-- Interviewees page
 - Fix interview.html aside from breaking
 - Create project page
 

@@ -3,7 +3,7 @@
 
 /* SCSS Variables */
 
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Oswald', sans-serif;
 $primary-color: rgb(0,128,128);
 $primary-color-transparent: rgba(0,128,128, 0.5);
 $secondary-color: lightgrey;
@@ -69,6 +69,7 @@ aside li, {
 
 h1 {
   font: 800 3.5em/1 $font-stack;
+  font-family: 'Abril Fatface', cursive;
   color: $primary-color;
   margin-left: 5px;
   margin-right: 5px;

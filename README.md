@@ -18,6 +18,8 @@ A Jekyll-based framework for presenting oral history content. In development.
 - sitemap generator
 - add config material
 - Interviewees page
+- Fix interview.html aside from breaking
+- Create project page
 
 -------------------------
 Rick Wysocki

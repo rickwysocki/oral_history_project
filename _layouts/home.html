@@ -8,12 +8,12 @@
 
       {% include nav.html %}
 
-      <header class="masthead">
+      <header>
+        <img class="header-img" src="https://placeimg.com/1000/480/any" />
         <h1 id="site-brand">{{ site.project-name }}</h1>
         <p> {{ site.description }}</p>
         <p>Contact</p>
       </header>
-
       <section>
 
 
@@ -23,9 +23,7 @@
       </section>
 
 
-      <section class="recent-post-container">
-        <h2>Recent Interviews</h2>
-        <div id="recent-posts">
+      <section id="interview-grid">
           {% for post in site.posts limit:3 %}
           <article>
             <img class="header-img" src="{{post.header-img}}" />
@@ -37,7 +35,6 @@
               </div>
           </article>
           {% endfor %}
-        </div>
     </section>
 
       {% include footer.html %}

@@ -10,7 +10,7 @@
 
       <header>
         <img class="header-img" src="https://placeimg.com/1000/480/any" />
-        <h1 id="site-brand">All Tags</h1>
+        <h1 id="site-brand">All Categories</h1>
       </header>
 
       <section>
@@ -18,10 +18,10 @@
 
 
       <div>
-    {% for tag in site.tags %}
-    <h2>{{ tag | first }}</h2>
+    {% for category in site.categories %}
+    <h2>{{ category | first }}</h2>
     <ul>
-      {% for post in tag[1] %}
+      {% for post in category[1] %}
         <a href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }}

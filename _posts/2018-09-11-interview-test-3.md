@@ -6,6 +6,7 @@ interviewee-photo: https://placeimg.com/100/100/any
 interviewer: Rick Wysocki
 blurb: Page blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb age blurb.
 layout: interview
+category: Protest
 tags: media history archive
 ---
 

@@ -51,6 +51,9 @@ h1 {
 img {
   max-width: 100%; }
 
+p {
+  padding: 0; }
+
 a {
   color: teal; }
 
@@ -87,9 +90,7 @@ footer {
   border-radius: 5px; }
 
 #site-brand {
-  /* text-shadow: 1px 1px 1px; */
-  border-bottom: 5px solid;
-  color: #fff; }
+  color: teal; }
 
 /* Class Elements */
 .nav-link,
@@ -141,13 +142,6 @@ footer {
 .interview-content h2 {
   margin-top: 0; }
 
-.interview-card-img {
-  width: 70%;
-  border-radius: 50%;
-  margin: auto;
-  margin-bottom: 20px;
-  border: solid 5px teal; }
-
 .tag-grid {
   padding: 0;
   margin: 0;
@@ -162,3 +156,34 @@ footer {
 
 .icon {
   width: 20px; }
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  body {
+    padding: 0em 5em; }
+
+  aside {
+    max-width: 100%;
+    width: 100%; }
+
+  .interview-page-row {
+    flex-flow: column;
+    max-width: 100%;
+    justify-content: space-around; }
+
+  .interview-content {
+    max-width: 100%; }
+
+  #interview-grid {
+    flex-flow: column;
+    justify-content: space-around; }
+
+  #interview-grid article {
+    max-width: 100%;
+    width: 100%; }
+
+  #recent-posts {
+    flex-flow: column; } }
+@media (max-width: 600px) {
+  body {
+    padding: 1em; } }

@@ -100,6 +100,10 @@ footer {
   border-top: $line-border;
 }
 
+iframe {
+  width: 100%;
+}
+
 
 /* ID Elements */
 
@@ -187,7 +191,8 @@ footer {
 }
 
 .interview-content {
-  max-width: 74%;
+  /* max-width: 74%; */
+  width: 100%;
 }
 
 .interview-content h2 {

@@ -30,6 +30,8 @@ a:visited { color: #00cdcd; }
 
 footer { margin-top: 3em; border-top: 5px solid; }
 
+iframe { width: 100%; }
+
 /* ID Elements */
 #interview-grid { display: flex; flex-flow: row wrap; justify-content: space-between; }
 
@@ -56,7 +58,7 @@ footer { margin-top: 3em; border-top: 5px solid; }
 
 .site-brand-image { border-top: 20px solid teal; margin-bottom: 0; }
 
-.interview-content { max-width: 74%; }
+.interview-content { /* max-width: 74%; */ width: 100%; }
 
 .interview-content h2 { margin-top: 0; }
 

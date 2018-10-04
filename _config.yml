@@ -2,6 +2,9 @@
 project-name: Oral History Project
 description: A project developed by Rick Wysocki
 
+# Google Analytics: Replace "false" with your Google Tracking ID to use Google Analytics
+google-analytics: false
+
 # Sitemap
 url: 'http://rickwysocki.com'
 plugins:
